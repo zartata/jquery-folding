@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Jquery - Folding</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.folding-0.0.1.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('.foldable').folding();
+    $('#fold').click(function () { $('.foldable').trigger('fold'); });
+    $('#unfold').click(function () { $('.foldable').trigger('unfold'); });
+});
+</script>
+</head>
+<body>
+    <input type="button" id="fold" value="Fold'em all" />
+    <input type="button" id="unfold" value="Unfold'em all" />
+    <div class="foldable">
+        <h2 class="title">Lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum volutpat nunc ornare condimentum. Integer volutpat, purus tincidunt imperdiet porta, libero felis aliquet dolor, mollis dapibus odio nisl non nunc. Fusce iaculis elit eu neque sodales ac vestibulum ante consectetur. Phasellus ullamcorper vestibulum quam at scelerisque. Duis sollicitudin feugiat porta. Pellentesque varius lobortis tellus, et luctus enim rhoncus id. Nunc mauris lacus, molestie sed mollis in, ullamcorper quis nibh. Sed bibendum pharetra risus eu bibendum. Proin sit amet congue neque. In fermentum diam et urna fermentum dapibus. Curabitur pretium lorem sit amet velit blandit mollis eu id tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec tincidunt mauris eu odio iaculis tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur ac justo turpis. Mauris dolor massa, tincidunt ac commodo vel, pulvinar vel tellus.</p>
+    </div>
+    <div class="foldable folded" id="second">
+        <h2 class="title">Maecenas fermentum</h2>
+        <p>Maecenas fermentum, ipsum vehicula condimentum egestas, mi erat rutrum nunc, nec rutrum quam purus eu velit. Nunc enim purus, gravida eu scelerisque id, pharetra ut risus. Curabitur urna lacus, tincidunt et mollis at, porta in urna. Integer venenatis, urna in faucibus dignissim, elit magna feugiat enim, ac auctor erat ipsum pellentesque lorem. Nullam at sem erat, at vulputate orci. Donec pellentesque lacus nec lacus mollis ultricies. Quisque tristique odio consectetur velit tincidunt non commodo nulla molestie.</p>
+        <div class="foldable folded">
+            <h3 class="title">Donec ut placerat turpis</h3>
+            <p>Donec ut placerat turpis. Nunc mattis nunc at augue rutrum malesuada laoreet lorem condimentum. Praesent facilisis, nulla eu malesuada sodales, arcu augue pharetra leo, sit amet porta elit ipsum sed purus. Nunc at tempus dui. Aenean nec ipsum ligula, ac commodo mauris. Aliquam erat volutpat. Cras rutrum sagittis lacinia. Nam feugiat egestas felis id dapibus. Aenean et convallis eros. Duis convallis tempus sagittis.</p>
+        </div>
+        <div class="foldable">
+            <h3 class="title">Donec dignissim tristique vestibulum</h3>
+            <p>Donec dignissim tristique vestibulum. Ut sed neque quam, ac pretium justo. Maecenas interdum odio quis odio facilisis quis pretium eros consectetur. Aenean viverra ligula eget velit semper sit amet euismod libero mollis. Nunc dapibus sem at tortor elementum id tristique velit volutpat. Fusce luctus, erat vitae mattis fringilla, mauris nisi egestas est, at feugiat enim erat nec magna. Integer tellus est, dictum eu auctor a, lacinia eget leo. Duis tincidunt aliquam erat, ac tristique dolor placerat vitae. Maecenas eu ipsum dui, vitae dapibus odio. Vestibulum quis commodo dui. Nulla rutrum semper nibh non tincidunt.</p>
+        </div>
+    </div>
+</body>
+</html>

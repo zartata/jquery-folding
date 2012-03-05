@@ -11,7 +11,7 @@ An easy way to expand and collapse block on click.
 Usage
 -----
 
-    $('selector').folding();
+    $('selector').folding(options);
     
     // Manual fold
     $('selector').trigger('fold');

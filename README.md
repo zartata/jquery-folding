@@ -6,7 +6,8 @@ Author: Benjamin Delespierre <benjamin.delespierre@gmail.com>
 Description
 -----------
 
-An easy way to expand and collapse block on click.
+An easy way to expand and collapse block on click. 
+[demo](http://bdelespierre.github.com/jquery-folding/)
 
 Usage
 -----
